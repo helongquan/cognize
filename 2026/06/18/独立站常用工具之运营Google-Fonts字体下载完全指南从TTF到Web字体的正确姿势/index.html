@@ -1,0 +1,526 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>独立站常用工具之运营Google Fonts字体下载完全指南从TTF到Web字体的正确姿势 | It's not where you are today that matters, but where you are headed</title><meta name="author" content="Feeding Engineer"><meta name="copyright" content="Feeding Engineer"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="你可能也遇到过这样的困惑：明明在 Google Fonts 上选中了一款漂亮的免费字体，下载下来却是 .ttf 文件，而你的网页项目需要的是 .woff2 格式。这篇文章将帮你彻底搞懂 Google Fonts 的字体格式问题，并教你三种获取 Web 字体的正确方法。  一、为什么下载的是 TTF，而不是 Web 字体？很多人在 Google Fonts 官网上看到心仪的字体后，会点击右上角的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="独立站常用工具之运营Google Fonts字体下载完全指南从TTF到Web字体的正确姿势">
+<meta property="og:url" content="https://cognize.feeding-engineer.com/2026/06/18/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%B9%8B%E8%BF%90%E8%90%A5Google-Fonts%E5%AD%97%E4%BD%93%E4%B8%8B%E8%BD%BD%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97%E4%BB%8ETTF%E5%88%B0Web%E5%AD%97%E4%BD%93%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/index.html">
+<meta property="og:site_name" content="It&#39;s not where you are today that matters, but where you are headed">
+<meta property="og:description" content="你可能也遇到过这样的困惑：明明在 Google Fonts 上选中了一款漂亮的免费字体，下载下来却是 .ttf 文件，而你的网页项目需要的是 .woff2 格式。这篇文章将帮你彻底搞懂 Google Fonts 的字体格式问题，并教你三种获取 Web 字体的正确方法。  一、为什么下载的是 TTF，而不是 Web 字体？很多人在 Google Fonts 官网上看到心仪的字体后，会点击右上角的">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cognize.feeding-engineer.com/img/featureimages/19.jpg">
+<meta property="article:published_time" content="2026-06-18T01:40:27.000Z">
+<meta property="article:modified_time" content="2026-06-18T02:46:28.434Z">
+<meta property="article:author" content="Feeding Engineer">
+<meta property="article:tag" content="google font">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cognize.feeding-engineer.com/img/featureimages/19.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "独立站常用工具之运营Google Fonts字体下载完全指南从TTF到Web字体的正确姿势",
+  "url": "https://cognize.feeding-engineer.com/2026/06/18/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%B9%8B%E8%BF%90%E8%90%A5Google-Fonts%E5%AD%97%E4%BD%93%E4%B8%8B%E8%BD%BD%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97%E4%BB%8ETTF%E5%88%B0Web%E5%AD%97%E4%BD%93%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/",
+  "image": "https://cognize.feeding-engineer.com/img/featureimages/19.jpg",
+  "datePublished": "2026-06-18T01:40:27.000Z",
+  "dateModified": "2026-06-18T02:46:28.434Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Feeding Engineer",
+      "url": "https://cognize.feeding-engineer.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/logo23.webp"><link rel="canonical" href="https://cognize.feeding-engineer.com/2026/06/18/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%B9%8B%E8%BF%90%E8%90%A5Google-Fonts%E5%AD%97%E4%BD%93%E4%B8%8B%E8%BD%BD%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97%E4%BB%8ETTF%E5%88%B0Web%E5%AD%97%E4%BD%93%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.5-b1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '独立站常用工具之运营Google Fonts字体下载完全指南从TTF到Web字体的正确姿势',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/mycustom.css"><meta name="generator" content="Hexo 6.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/logo23.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-compass"></i><span> Leaps</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-box"></i><span> Archive</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tag"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> Links</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-feather"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/featureimages/19.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/avatar.webp" alt="Logo"></a><a class="nav-page-title" href="/"><span class="site-name">独立站常用工具之运营Google Fonts字体下载完全指南从TTF到Web字体的正确姿势</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-compass"></i><span> Leaps</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-box"></i><span> Archive</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tag"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> Links</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-feather"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">独立站常用工具之运营Google Fonts字体下载完全指南从TTF到Web字体的正确姿势</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2026-06-18T01:40:27.000Z" title="Created 2026-06-18 09:40:27">2026-06-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-06-18T02:46:28.434Z" title="Updated 2026-06-18 10:46:28">2026-06-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/cognize/">cognize</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><blockquote>
+<p>你可能也遇到过这样的困惑：明明在 Google Fonts 上选中了一款漂亮的免费字体，下载下来却是 <code>.ttf</code> 文件，而你的网页项目需要的是 <code>.woff2</code> 格式。这篇文章将帮你彻底搞懂 Google Fonts 的字体格式问题，并教你三种获取 Web 字体的正确方法。</p>
+</blockquote>
+<h2 id="一、为什么下载的是-TTF，而不是-Web-字体？"><a href="#一、为什么下载的是-TTF，而不是-Web-字体？" class="headerlink" title="一、为什么下载的是 TTF，而不是 Web 字体？"></a>一、为什么下载的是 TTF，而不是 Web 字体？</h2><p>很多人在 Google Fonts 官网上看到心仪的字体后，会点击右上角的 <strong>“Download family”</strong> 按钮。这样下载到的确实是 <code>.ttf</code> 文件，但这个格式<strong>是为桌面软件准备的</strong>——比如 Word、PPT、Photoshop 等。</p>
+<p>而网页开发需要的是 <code>.woff2</code> 格式，它体积更小、加载更快，是当下 Web 字体的最佳实践标准。</p>
+<p>简单来说：</p>
+<ul>
+<li><strong>TTF</strong> → 给电脑用的（桌面安装）</li>
+<li><strong>WOFF2</strong> → 给网页用的（Web 字体）</li>
+</ul>
+<p>所以，不是 Google Fonts 没有提供 Web 字体，而是你选择了”下载桌面版”这个入口。要获取 Web 字体，有以下几种方法。</p>
+<hr>
+<h2 id="二、方法一：使用-CDN-嵌入（最推荐，无需下载）"><a href="#二、方法一：使用-CDN-嵌入（最推荐，无需下载）" class="headerlink" title="二、方法一：使用 CDN 嵌入（最推荐，无需下载）"></a>二、方法一：使用 CDN 嵌入（最推荐，无需下载）</h2><p>如果你的项目可以访问外网，这是最简单、最专业的方式。你<strong>不需要下载任何文件</strong>，只需在 HTML 中引用 Google Fonts 的 CSS 服务即可。</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p><strong>1. 在 Google Fonts 官网选择字体</strong></p>
+<p>访问 <a target="_blank" rel="noopener" href="https://fonts.google.com/">fonts.google.com</a>，找到你喜欢的字体（比如 Inter），点击进入详情页。</p>
+<p>在页面下方，<strong>勾选你需要的字重</strong>（如 400、700）。⚠️ 注意：选择的字重越多，加载越慢，按需选择即可。</p>
+<p><strong>2. 复制嵌入链接</strong></p>
+<p>点击右上角的 “查看所选系列”（View Selected Families）小窗口，你会看到类似这样的代码：</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"preconnect"</span> <span class="attr">href</span>=<span class="string">"https://fonts.googleapis.com"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"preconnect"</span> <span class="attr">href</span>=<span class="string">"https://fonts.gstatic.com"</span> <span class="attr">crossorigin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>3. 粘贴到 HTML 中使用</strong></p>
+<p>将上述代码放入 HTML 的 <code>&lt;head&gt;</code> 中，然后在 CSS 中引用：</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>, sans-serif;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ul>
+<li>零配置，一行代码搞定</li>
+<li>Google 会自动根据浏览器提供最优格式（WOFF2、WOFF 等）</li>
+<li>利用 CDN 缓存，加载速度快</li>
+<li>无需维护字体文件</li>
+</ul>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ul>
+<li>需要联网访问 Google 服务（部分地区可能不稳定）</li>
+</ul>
+<hr>
+<h2 id="三、方法二：使用-google-webfonts-helper（推荐国内用户）"><a href="#三、方法二：使用-google-webfonts-helper（推荐国内用户）" class="headerlink" title="三、方法二：使用 google-webfonts-helper（推荐国内用户）"></a>三、方法二：使用 google-webfonts-helper（推荐国内用户）</h2><p>这是我最推荐的下载方式，尤其适合国内开发者。它是一个在线工具，操作直观，且<strong>不需要安装任何命令行工具</strong>。</p>
+<h3 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h3><p><strong>1. 访问工具网站</strong></p>
+<p>打开 <a target="_blank" rel="noopener" href="https://gwfh.mranftl.com/">gwfh.mranftl.com</a>（google-webfonts-helper）。</p>
+<p><strong>2. 搜索并选择字体</strong></p>
+<p>在搜索框中输入字体名称（如 Inter），点击进入。</p>
+<p><strong>3. 选择字重和格式</strong></p>
+<ul>
+<li>在 “Select weights” 中勾选你需要的字重（如 400、700）</li>
+<li>在 “Select formats” 中，<strong>只勾选 WOFF2</strong>（这是现代浏览器支持的最优格式）</li>
+<li>也可以勾选 WOFF 作为备用</li>
+</ul>
+<p><strong>4. 复制 CSS 或下载文件</strong></p>
+<p>页面底部会生成两样东西：</p>
+<ul>
+<li><strong>CSS 代码</strong>：可以直接复制到你的样式文件中</li>
+<li><strong>下载按钮</strong>：点击即可下载包含 <code>.woff2</code> 文件的压缩包</li>
+</ul>
+<h3 id="生成的-CSS-示例"><a href="#生成的-CSS-示例" class="headerlink" title="生成的 CSS 示例"></a>生成的 CSS 示例</h3><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* inter-regular - latin */</span></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">400</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'../fonts/inter-v13-latin-regular.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"><span class="comment">/* inter-700 - latin */</span></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">700</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'../fonts/inter-v13-latin-700.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h3><ul>
+<li>完全免费，无需安装任何软件</li>
+<li>支持指定字符集（如只下载 latin 或 latin-ext），进一步减小体积</li>
+<li>生成的 CSS 代码可以直接使用</li>
+<li>国内访问速度好</li>
+</ul>
+<hr>
+<h2 id="四、方法三：使用-google-font-cli-命令行工具"><a href="#四、方法三：使用-google-font-cli-命令行工具" class="headerlink" title="四、方法三：使用 google-font-cli 命令行工具"></a>四、方法三：使用 google-font-cli 命令行工具</h2><p>如果你习惯使用命令行，且需要自动化下载流程，可以试试 <code>google-font-cli</code>。</p>
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><p><strong>1. 确保 Node.js 已安装</strong></p>
+<p>在终端输入：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果没有安装，先去 <a target="_blank" rel="noopener" href="https://nodejs.org/">nodejs.org</a> 下载 LTS 版本。</p>
+<p><strong>2. 全局安装 google-font-cli</strong></p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g google-font-cli</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="下载-WOFF2-格式"><a href="#下载-WOFF2-格式" class="headerlink" title="下载 WOFF2 格式"></a>下载 WOFF2 格式</h3><p>安装成功后，使用 <code>download</code> 命令（注意：**不是 <code>install</code>**）：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载 Inter 字体的 WOFF2 格式</span></span><br><span class="line">gfcli download Inter --woff2</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果只需要特定字重：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gfcli download Inter -v 400,700 --woff2</span><br></pre></td></tr></tbody></table></figure>
+
+<p>下载完成后，当前目录下会出现 <code>.woff2</code> 文件。</p>
+<h3 id="⚠️-常见错误"><a href="#⚠️-常见错误" class="headerlink" title="⚠️ 常见错误"></a>⚠️ 常见错误</h3><table>
+<thead>
+<tr>
+<th>错误命令</th>
+<th>正确命令</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>gfcli install Inter --woff2</code></td>
+<td><code>gfcli download Inter --woff2</code></td>
+<td><code>install</code> 是安装到系统，不支持 <code>--woff2</code></td>
+</tr>
+<tr>
+<td><code>gfcli download Inter --woff2</code> 报错</td>
+<td>检查是否用 <code>-v</code> 指定字重</td>
+<td>部分版本要求明确指定字重</td>
+</tr>
+</tbody></table>
+<h3 id="优点-2"><a href="#优点-2" class="headerlink" title="优点"></a>优点</h3><ul>
+<li>适合批量下载和自动化脚本</li>
+<li>可以精确控制下载内容</li>
+</ul>
+<h3 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h3><ul>
+<li>需要安装 Node.js 环境</li>
+<li>命令参数需要熟悉</li>
+</ul>
+<hr>
+<h2 id="五、三种方法对比"><a href="#五、三种方法对比" class="headerlink" title="五、三种方法对比"></a>五、三种方法对比</h2><table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>CDN 嵌入</th>
+<th>google-webfonts-helper</th>
+<th>google-font-cli</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>是否需要下载文件</strong></td>
+<td>❌ 不需要</td>
+<td>✅ 需要</td>
+<td>✅ 需要</td>
+</tr>
+<tr>
+<td><strong>是否需要安装软件</strong></td>
+<td>❌ 不需要</td>
+<td>❌ 不需要</td>
+<td>✅ 需要 Node.js</td>
+</tr>
+<tr>
+<td><strong>适合国内网络</strong></td>
+<td>⚠️ 可能不稳定</td>
+<td>✅ 良好</td>
+<td>✅ 良好</td>
+</tr>
+<tr>
+<td><strong>操作难度</strong></td>
+<td>⭐ 最简单</td>
+<td>⭐⭐ 简单</td>
+<td>⭐⭐⭐ 中等</td>
+</tr>
+<tr>
+<td><strong>推荐场景</strong></td>
+<td>在线项目</td>
+<td>自托管/离线项目</td>
+<td>自动化批量下载</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="六、常见问题解答"><a href="#六、常见问题解答" class="headerlink" title="六、常见问题解答"></a>六、常见问题解答</h2><p><strong>Q1：WOFF2 和 WOFF 有什么区别？</strong></p>
+<p>WOFF2 是 WOFF 的升级版，压缩率更高，文件体积更小，加载速度更快。所有现代浏览器都支持 WOFF2。</p>
+<p><strong>Q2：我下载了 TTF，能不能转成 WOFF2？</strong></p>
+<p>可以，但不推荐。在线转换工具（如 transfonter.org）可以将 TTF 转为 WOFF2，但 Google Fonts 官方提供的 WOFF2 经过了专业优化，压缩率更好。建议直接从源头获取。</p>
+<p><strong>Q3：自托管字体时，<code>@font-face</code> 中的路径怎么写？</strong></p>
+<p>假设你的项目结构如下：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">project/</span><br><span class="line">├── css/</span><br><span class="line">│   └── style.css</span><br><span class="line">└── fonts/</span><br><span class="line">    └── inter-regular.woff2</span><br></pre></td></tr></tbody></table></figure>
+
+<p>CSS 中应写：</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'../fonts/inter-regular.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>Q4：为什么我选了很多字重，页面加载变慢了？</strong></p>
+<p>每个字重都是一个独立的字体文件，浏览器需要额外下载。只选择你实际会用到的字重（通常 400 和 700 就够了）。</p>
+<hr>
+<h2 id="七、总结"><a href="#七、总结" class="headerlink" title="七、总结"></a>七、总结</h2><table>
+<thead>
+<tr>
+<th>你的需求</th>
+<th>推荐方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>在线项目，能访问 Google</td>
+<td>方法一：CDN 嵌入</td>
+</tr>
+<tr>
+<td>自托管字体，或国内网络受限</td>
+<td>方法二：google-webfonts-helper</td>
+</tr>
+<tr>
+<td>自动化批量下载</td>
+<td>方法三：google-font-cli</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="比如："><a href="#比如：" class="headerlink" title="比如："></a>比如：</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">PS C:\Windows\system32&gt; gfcli download Inter --woff2</span><br><span class="line"></span><br><span class="line">Downloading Google Font List...</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Inter variant 100 processed: C:\Windows\system32\Inter-100.woff2</span><br><span class="line">Inter variant 200 processed: C:\Windows\system32\Inter-200.woff2</span><br><span class="line">Inter variant 300 processed: C:\Windows\system32\Inter-300.woff2</span><br><span class="line">Inter variant 500 processed: C:\Windows\system32\Inter-500.woff2</span><br><span class="line">Inter variant 600 processed: C:\Windows\system32\Inter-600.woff2</span><br><span class="line">Inter variant 700 processed: C:\Windows\system32\Inter-700.woff2</span><br><span class="line">Inter variant 800 processed: C:\Windows\system32\Inter-800.woff2</span><br><span class="line">Inter variant 900 processed: C:\Windows\system32\Inter-900.woff2</span><br><span class="line">Inter variant 100italic processed: C:\Windows\system32\Inter-100italic.woff2</span><br><span class="line">Inter variant 200italic processed: C:\Windows\system32\Inter-200italic.woff2</span><br><span class="line">Inter variant 300italic processed: C:\Windows\system32\Inter-300italic.woff2</span><br><span class="line">Inter variant regular processed: C:\Windows\system32\Inter-regular.woff2</span><br><span class="line">Inter variant italic processed: C:\Windows\system32\Inter-italic.woff2</span><br><span class="line">Inter variant 500italic processed: C:\Windows\system32\Inter-500italic.woff2</span><br><span class="line">Inter variant 600italic processed: C:\Windows\system32\Inter-600italic.woff2</span><br><span class="line">Inter variant 700italic processed: C:\Windows\system32\Inter-700italic.woff2</span><br><span class="line">Inter variant 800italic processed: C:\Windows\system32\Inter-800italic.woff2</span><br><span class="line">Inter variant 900italic processed: C:\Windows\system32\Inter-900italic.woff2</span><br></pre></td></tr></tbody></table></figure>
+<p>如何应用到独立站里面，比如我有一个hexo博客，我想要更换字体，请问如何操作，目前字体已经下载下来了，并且放在了<code>source/font</code>目录下，主题是butterfly</p>
+<p>太好了！你已经成功下载了所有 Inter 字体的 WOFF2 文件，现在我们来把它们应用到你的 Hexo + Butterfly 主题中。</p>
+<h2 id="📁-确认文件位置"><a href="#📁-确认文件位置" class="headerlink" title="📁 确认文件位置"></a>📁 确认文件位置</h2><p>首先，确保你的字体文件放在这里：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">你的博客根目录/</span><br><span class="line">└── source/</span><br><span class="line">    └── font/</span><br><span class="line">        ├── Inter-100.woff2</span><br><span class="line">        ├── Inter-200.woff2</span><br><span class="line">        ├── Inter-300.woff2</span><br><span class="line">        ├── Inter-regular.woff2</span><br><span class="line">        ├── Inter-italic.woff2</span><br><span class="line">        ├── Inter-500.woff2</span><br><span class="line">        ├── Inter-600.woff2</span><br><span class="line">        ├── Inter-700.woff2</span><br><span class="line">        ├── Inter-800.woff2</span><br><span class="line">        ├── Inter-900.woff2</span><br><span class="line">        └── ... (所有 italic 文件)</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h2 id="方法一：通过-Butterfly-主题配置（推荐）"><a href="#方法一：通过-Butterfly-主题配置（推荐）" class="headerlink" title="方法一：通过 Butterfly 主题配置（推荐）"></a>方法一：通过 Butterfly 主题配置（推荐）</h2><p>Butterfly 主题支持自定义字体，这是最干净的方式。</p>
+<h3 id="1-创建自定义字体-CSS-文件（字体不是放在主题里面而是放在source目录下，新建一个字体目录）"><a href="#1-创建自定义字体-CSS-文件（字体不是放在主题里面而是放在source目录下，新建一个字体目录）" class="headerlink" title="1. 创建自定义字体 CSS 文件（字体不是放在主题里面而是放在source目录下，新建一个字体目录）"></a>1. 创建自定义字体 CSS 文件（字体不是放在主题里面而是放在source目录下，新建一个字体目录）</h3><p>在 <code>source/</code> 目录下创建一个 CSS 文件来定义字体：</p>
+<p><strong>创建文件：<code>source/css/custom-fonts.css</code></strong></p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* ===== Inter 字体定义 ===== */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 常规字重 */</span></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">100</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-100.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">200</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-200.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">300</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-300.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">400</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-regular.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">500</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-500.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">600</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-600.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">700</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-700.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">800</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-800.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">900</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-900.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 斜体字重 */</span></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">100</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-100italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">200</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-200italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">300</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-300italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">400</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">500</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-500italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">600</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-600italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">700</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-700italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">800</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-800italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: italic;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">900</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'/font/Inter-900italic.woff2'</span>) <span class="built_in">format</span>(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后要应用到全局（重点）：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/* 应用到全局 */</span><br><span class="line">body {</span><br><span class="line">  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h3 id="2-在-Butterfly-配置中引入字体"><a href="#2-在-Butterfly-配置中引入字体" class="headerlink" title="2. 在 Butterfly 配置中引入字体"></a>2. 在 Butterfly 配置中引入字体</h3><p>编辑你的 <code>_config.butterfly.yml</code> 文件：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在 inject 部分引入自定义 CSS</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># 引入你刚刚创建的字体 CSS 文件</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel="stylesheet"</span> <span class="string">href="/css/custom-fonts.css"&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改字体配置（找到 font 部分）</span></span><br><span class="line"><span class="attr">font:</span></span><br><span class="line">  <span class="attr">global-font-family:</span> <span class="string">Inter,</span> <span class="string">-apple-system,</span> <span class="string">BlinkMacSystemFont,</span> <span class="string">'Segoe UI'</span><span class="string">,</span> <span class="string">Roboto,</span> <span class="string">Helvetica,</span> <span class="string">Arial,</span> <span class="string">sans-serif</span></span><br><span class="line">  <span class="attr">code-font-family:</span> <span class="string">Inter,</span> <span class="string">'SF Mono'</span><span class="string">,</span> <span class="string">'Fira Code'</span><span class="string">,</span> <span class="string">'Consolas'</span><span class="string">,</span> <span class="string">'Liberation Mono'</span><span class="string">,</span> <span class="string">'Menlo'</span><span class="string">,</span> <span class="string">monospace</span></span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h2 id="方法二：直接修改-Butterfly-的样式文件"><a href="#方法二：直接修改-Butterfly-的样式文件" class="headerlink" title="方法二：直接修改 Butterfly 的样式文件"></a>方法二：直接修改 Butterfly 的样式文件</h2><p>如果你想更直接一些，可以修改 Butterfly 主题的 CSS 文件。</p>
+<h3 id="1-找到并编辑主题-CSS-文件"><a href="#1-找到并编辑主题-CSS-文件" class="headerlink" title="1. 找到并编辑主题 CSS 文件"></a>1. 找到并编辑主题 CSS 文件</h3><p>在 <code>themes/butterfly/source/css/</code> 目录下找到 <code>style.styl</code> 或 <code>index.styl</code>，在文件<strong>最顶部</strong>添加：</p>
+<figure class="highlight styl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入 Inter 字体</span></span><br><span class="line"><span class="keyword">@font-face</span> {</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">'Inter'</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">100</span>;</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="attribute">src</span>: url(<span class="string">'/font/Inter-100.woff2'</span>) format(<span class="string">'woff2'</span>);</span><br><span class="line">}</span><br><span class="line"><span class="comment">// ... 重复所有字重</span></span><br><span class="line"><span class="comment">// (内容同方法一中的 @font-face 代码)</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-修改字体变量"><a href="#2-修改字体变量" class="headerlink" title="2. 修改字体变量"></a>2. 修改字体变量</h3><p>在 <code>themes/butterfly/source/css/_variables.styl</code> 中找到字体变量并修改：</p>
+<figure class="highlight styl"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 找到类似这样的代码并修改</span></span><br><span class="line"><span class="variable">$global</span>-<span class="attribute">font-family</span> = Inter, -apple-system, BlinkMacSystemFont, <span class="string">'Segoe UI'</span>, Roboto, <span class="string">'Helvetica Neue'</span>, Arial, <span class="string">'Noto Sans SC'</span>, sans-serif</span><br><span class="line"><span class="variable">$code</span>-<span class="attribute">font-family</span> = Inter, <span class="string">'SF Mono'</span>, <span class="string">'Fira Code'</span>, <span class="string">'Consolas'</span>, <span class="string">'Liberation Mono'</span>, <span class="string">'Menlo'</span>, monospace</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h2 id="方法三：使用-Hexo-的-injector-功能（最灵活）"><a href="#方法三：使用-Hexo-的-injector-功能（最灵活）" class="headerlink" title="方法三：使用 Hexo 的 injector 功能（最灵活）"></a>方法三：使用 Hexo 的 injector 功能（最灵活）</h2><p>创建一个专门的脚本文件，让 Hexo 自动注入字体配置。</p>
+<h3 id="1-创建-injector-文件"><a href="#1-创建-injector-文件" class="headerlink" title="1. 创建 injector 文件"></a>1. 创建 injector 文件</h3><p>在博客根目录创建 <code>scripts/font.js</code>：</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// scripts/font.js</span></span><br><span class="line">hexo.<span class="property">extend</span>.<span class="property">injector</span>.<span class="title function_">register</span>(<span class="string">'head_end'</span>, <span class="function">() =&gt;</span> {</span><br><span class="line">  <span class="keyword">return</span> <span class="string">`</span></span><br><span class="line"><span class="string">  &lt;style&gt;</span></span><br><span class="line"><span class="string">    /* Inter 字体定义 */</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:100; font-display:swap; src:url('/font/Inter-100.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:200; font-display:swap; src:url('/font/Inter-200.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:300; font-display:swap; src:url('/font/Inter-300.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:400; font-display:swap; src:url('/font/Inter-regular.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:500; font-display:swap; src:url('/font/Inter-500.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:600; font-display:swap; src:url('/font/Inter-600.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:700; font-display:swap; src:url('/font/Inter-700.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:800; font-display:swap; src:url('/font/Inter-800.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:normal; font-weight:900; font-display:swap; src:url('/font/Inter-900.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:100; font-display:swap; src:url('/font/Inter-100italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:200; font-display:swap; src:url('/font/Inter-200italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:300; font-display:swap; src:url('/font/Inter-300italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:400; font-display:swap; src:url('/font/Inter-italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:500; font-display:swap; src:url('/font/Inter-500italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:600; font-display:swap; src:url('/font/Inter-600italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:700; font-display:swap; src:url('/font/Inter-700italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:800; font-display:swap; src:url('/font/Inter-800italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string">    @font-face { font-family:'Inter'; font-style:italic; font-weight:900; font-display:swap; src:url('/font/Inter-900italic.woff2') format('woff2'); }</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    /* 应用到全局 */</span></span><br><span class="line"><span class="string">    body, .global-font, .article-title, .post-title {</span></span><br><span class="line"><span class="string">      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;</span></span><br><span class="line"><span class="string">    }</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    code, pre, .code-font {</span></span><br><span class="line"><span class="string">      font-family: Inter, 'SF Mono', 'Fira Code', 'Consolas', 'Liberation Mono', monospace !important;</span></span><br><span class="line"><span class="string">    }</span></span><br><span class="line"><span class="string">  &lt;/style&gt;</span></span><br><span class="line"><span class="string">  `</span>;</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h2 id="🎯-我推荐的方法组合"><a href="#🎯-我推荐的方法组合" class="headerlink" title="🎯 我推荐的方法组合"></a>🎯 我推荐的方法组合</h2><p>对于 Butterfly 主题，我建议这样操作：</p>
+<ol>
+<li><strong>采用方法一</strong>：在 <code>source/css/custom-fonts.css</code> 中定义所有 <code>@font-face</code></li>
+<li><strong>在 <code>_config.butterfly.yml</code> 中引入</strong>，并修改 <code>font.global-font-family</code></li>
+</ol>
+<p>这样做的好处是：</p>
+<ul>
+<li>✅ 字体定义和主题配置分离，升级主题时不会丢失</li>
+<li>✅ 所有字体文件放在 <code>source/font/</code> 下，Hexo 生成时自动复制</li>
+<li>✅ 配置清晰，容易维护</li>
+</ul>
+<hr>
+<h2 id="🔧-验证和应用"><a href="#🔧-验证和应用" class="headerlink" title="🔧 验证和应用"></a>🔧 验证和应用</h2><p>完成配置后，执行以下命令：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清理缓存</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态文件</span></span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 本地预览</span></span><br><span class="line">hexo server</span><br></pre></td></tr></tbody></table></figure>
+
+<p>打开浏览器访问 <code>http://localhost:4000</code>，打开开发者工具（F12）→ Network 标签页，应该能看到你的 <code>.woff2</code> 字体文件被加载。在 Elements 标签中查看任意文本元素，<code>font-family</code> 应该显示为 <code>Inter</code>。</p>
+<hr>
+<h2 id="⚠️-注意事项"><a href="#⚠️-注意事项" class="headerlink" title="⚠️ 注意事项"></a>⚠️ 注意事项</h2><ol>
+<li><p><strong>字体文件大小</strong>：你下载了 18 个字体文件（含斜体），全部加载会影响页面速度。建议只保留你实际会用到的字重（通常 400、500、600、700 就够了），删掉不用的可以大幅减少加载时间。</p>
+</li>
+<li><p>**<code>font-display: swap</code>**：这个属性保证文字在字体加载完成前先用系统字体显示，避免出现长时间空白，提升用户体验。</p>
+</li>
+<li><p><strong>路径斜杠</strong>：<code>/font/Inter-100.woff2</code> 中的 <code>/</code> 代表网站根目录，对应 Hexo 的 <code>public/</code> 目录。</p>
+</li>
+<li><p><strong>缓存问题</strong>：如果字体没有立即生效，可以清除浏览器缓存或使用无痕模式测试。</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>这个命令可以列出google所有免费字体吗？因为不知道有哪些字体可用，希望列出字体列表</p>
+</blockquote>
+<p>是的，可以用 <code>gfcli</code> 列出所有字体。不过，它自己没有一个像 <code>gfcli list</code> 这样直接的命令，但可以通过<strong>搜索</strong>功能来实现。除此之外，还有一个来自 Google 官方的更强大的方式。</p>
+<hr>
+<h3 id="🔍-方法一：通过-gfcli-搜索（适用于命令行）"><a href="#🔍-方法一：通过-gfcli-搜索（适用于命令行）" class="headerlink" title="🔍 方法一：通过 gfcli 搜索（适用于命令行）"></a>🔍 方法一：通过 <code>gfcli</code> 搜索（适用于命令行）</h3><p><code>gfcli</code> 的 <code>search</code> 命令可以帮你发现字体，它的匹配规则很宽松，你输入几个字母，它就会列出名称中包含这些字母的所有字体。</p>
+<p><strong>命令格式：</strong></p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gfcli search [字体名称关键词]</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>使用示例：</strong></p>
+<ol>
+<li><p><strong>输入一个短词，模糊搜索</strong>：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gfcli search sans</span><br></pre></td></tr></tbody></table></figure>
+<p>这会列出名字里包含 “sans” 的字体（比如 Open Sans, Noto Sans）。</p>
+</li>
+<li><p><strong>输入一个具体名字</strong>：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gfcli search inter</span><br></pre></td></tr></tbody></table></figure>
+<p>这会直接定位到 Inter 字体。</p>
+</li>
+</ol>
+<p>你可以通过不断更换关键词来探索，比如 <code>serif</code>、<code>mono</code> 或 <code>display</code>，从而发现大量不同风格的字体。</p>
+<h3 id="🌐-方法二：Google-Fonts-开发者-API（最强大）"><a href="#🌐-方法二：Google-Fonts-开发者-API（最强大）" class="headerlink" title="🌐 方法二：Google Fonts 开发者 API（最强大）"></a>🌐 方法二：Google Fonts 开发者 API（最强大）</h3><p>这是 Google 官方提供的开发者 API，可以获取<strong>所有字体</strong>的完整列表及其元数据（如样式、字符集等），非常权威。</p>
+<p>你可以直接在浏览器中访问以下链接（把 <code>YOUR-API-KEY</code> 换成你自己的 API Key）：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.googleapis.com/webfonts/v1/webfonts?key=YOUR-API-KEY</span><br></pre></td></tr></tbody></table></figure>
+
+<p>它会返回一个巨大的 JSON 文件，里面就是所有的字体数据，示例结构如下：</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">{</span></span><br><span class="line"> <span class="attr">"kind"</span><span class="punctuation">:</span> <span class="string">"webfonts#webfontList"</span><span class="punctuation">,</span></span><br><span class="line"> <span class="attr">"items"</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">{</span></span><br><span class="line">    <span class="attr">"family"</span><span class="punctuation">:</span> <span class="string">"Anonymous Pro"</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"variants"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">"regular"</span><span class="punctuation">,</span> <span class="string">"italic"</span><span class="punctuation">,</span> <span class="string">"700"</span><span class="punctuation">,</span> <span class="string">"700italic"</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"subsets"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">"cyrillic"</span><span class="punctuation">,</span> <span class="string">"greek"</span><span class="punctuation">,</span> <span class="string">"latin"</span><span class="punctuation">,</span> <span class="string">"latin-ext"</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"category"</span><span class="punctuation">:</span> <span class="string">"monospace"</span></span><br><span class="line">  <span class="punctuation">}</span><span class="punctuation">,</span></span><br><span class="line">  <span class="punctuation">{</span></span><br><span class="line">    <span class="attr">"family"</span><span class="punctuation">:</span> <span class="string">"Antic"</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"variants"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">"regular"</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"subsets"</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">"latin"</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">"category"</span><span class="punctuation">:</span> <span class="string">"sans-serif"</span></span><br><span class="line">  <span class="punctuation">}</span></span><br><span class="line"> <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+<hr>
+<h3 id="💡-最推荐的方法：直接在官网浏览"><a href="#💡-最推荐的方法：直接在官网浏览" class="headerlink" title="💡 最推荐的方法：直接在官网浏览"></a>💡 最推荐的方法：直接在官网浏览</h3><p>说实话，最直观、体验最好的方式，还是直接访问 <strong>Google Fonts 官网</strong> (<code>fonts.google.com</code>)。官网本身就是为浏览和挑选字体设计的，你可以按分类（Serif/Sans-serif）、按热门程度筛选，还能直接输入文字预览效果，比命令行方便得多。</p>
+<p>考虑到你用的是 Hexo 博客，建议先在官网上挑选好喜欢的字体，记下它的名字，然后再用你熟悉的 <code>gfcli download</code> 命令下载 <code>.woff2</code> 文件，这样流程最顺畅。</p>
+<hr>
+<blockquote>
+<p><code>src: url('/font/Inter-regular.woff2')（从根目录开始，正确）</code>这个到底从哪里开始？</p>
+</blockquote>
+<p>啊哈！找到问题的根本原因了！</p>
+<hr>
+<h2 id="🔍-问题所在"><a href="#🔍-问题所在" class="headerlink" title="🔍 问题所在"></a>🔍 问题所在</h2><p>你的字体放在了：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">E:\project\blog\cognize\themes\butterfly\source\font\</span><br></pre></td></tr></tbody></table></figure>
+
+<p>但是你的 Hexo 博客根目录是：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">E:\project\blog\cognize\</span><br></pre></td></tr></tbody></table></figure>
+
+<p>当 Hexo 生成静态文件时，它只会处理<strong>根目录下</strong>的 <code>source/</code> 文件夹，而<strong>不会</strong>处理主题内部的 <code>source/</code> 文件夹（除非主题有特殊的处理机制）。</p>
+<p>所以：</p>
+<ul>
+<li>✅ 你的字体在 <code>themes/butterfly/source/font/</code> → Hexo <strong>不会</strong>把它复制到 <code>public/</code></li>
+<li>❌ 所以访问 <code>/font/Inter-regular.woff2</code> 会返回 404</li>
+</ul>
+<hr>
+<h2 id="🛠️-解决方案"><a href="#🛠️-解决方案" class="headerlink" title="🛠️ 解决方案"></a>🛠️ 解决方案</h2><h3 id="方案一：把字体移到博客根目录的-source-下（推荐）"><a href="#方案一：把字体移到博客根目录的-source-下（推荐）" class="headerlink" title="方案一：把字体移到博客根目录的 source/ 下（推荐）"></a>方案一：把字体移到博客根目录的 <code>source/</code> 下（推荐）</h3><p>这是最简单、最标准的方式。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">E:\project\blog\cognize\</span><br><span class="line">├── source/                    ← 博客根目录的 source</span><br><span class="line">│   ├── _posts/</span><br><span class="line">│   ├── css/</span><br><span class="line">│   ├── font/                  ← 【把字体移到这里】</span><br><span class="line">│   │   ├── Inter-regular.woff2</span><br><span class="line">│   │   └── ...</span><br><span class="line">│   └── ...</span><br><span class="line">├── themes/</span><br><span class="line">│   └── butterfly/</span><br><span class="line">│       └── source/            ← 主题自己的 source（不用管它）</span><br><span class="line">└── _config.yml</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>操作步骤</strong>：</p>
+<ol>
+<li>剪切 <code>E:\project\blog\cognize\themes\butterfly\source\font\</code> 整个文件夹</li>
+<li>粘贴到 <code>E:\project\blog\cognize\source\font\</code></li>
+<li>重新生成：<code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server</code></li>
+</ol>
+<p>然后你的字体 URL 应该是：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:4000/font/Inter-regular.woff2  ✅ 可以访问</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<h3 id="方案二：修改-Hexo-配置，包含主题的-source-目录"><a href="#方案二：修改-Hexo-配置，包含主题的-source-目录" class="headerlink" title="方案二：修改 Hexo 配置，包含主题的 source 目录"></a>方案二：修改 Hexo 配置，包含主题的 source 目录</h3><p>如果你坚持要把字体放在主题目录下，需要修改 <code>_config.yml</code>：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">themes/butterfly/source/font/**/*</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>这样 Hexo 在生成时会把主题里的字体也复制到 <code>public/</code> 目录。</p>
+<p><strong>注意</strong>：这种方式不推荐，因为升级主题时可能会丢失字体文件。</p>
+<hr>
+<h3 id="方案三：使用主题的-inject-功能（如果-Butterfly-支持）"><a href="#方案三：使用主题的-inject-功能（如果-Butterfly-支持）" class="headerlink" title="方案三：使用主题的 inject 功能（如果 Butterfly 支持）"></a>方案三：使用主题的 inject 功能（如果 Butterfly 支持）</h3><p>有些主题支持在配置中指定自定义资源路径。查看 <code>_config.butterfly.yml</code> 中是否有类似配置：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 可能类似这样的配置</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment"># 如果主题支持自定义 css 路径</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/css/custom-style.css</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>但即便如此，字体文件最好还是放在根目录的 <code>source/</code> 下。</p>
+<hr>
+<h2 id="✅-验证是否成功"><a href="#✅-验证是否成功" class="headerlink" title="✅ 验证是否成功"></a>✅ 验证是否成功</h2><p>完成方案一后：</p>
+<ol>
+<li><p><strong>直接访问测试</strong>：<br>浏览器打开 <code>http://localhost:4000/font/Inter-regular.woff2</code></p>
+<ul>
+<li>如果弹出下载或显示内容 → ✅ 成功</li>
+<li>如果 404 → ❌ 还没成功</li>
+</ul>
+</li>
+<li><p><strong>开发者工具验证</strong>：<br>F12 → Network → 刷新 → 搜索 <code>woff2</code>，应该能看到字体文件被加载，状态码 200</p>
+</li>
+<li><p><strong>字体生效验证</strong>：<br>选中页面文字 → Computed → font-family 应该显示 <code>Inter</code></p>
+</li>
+</ol>
+<hr>
+<h2 id="📌-记住这个规则"><a href="#📌-记住这个规则" class="headerlink" title="📌 记住这个规则"></a>📌 记住这个规则</h2><p>对于 Hexo 博客：</p>
+<table>
+<thead>
+<tr>
+<th>文件位置</th>
+<th>是否能被访问到</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>项目根目录/source/xxx</code></td>
+<td>✅ 会被复制到 <code>public/xxx</code></td>
+</tr>
+<tr>
+<td><code>项目根目录/themes/主题名/source/xxx</code></td>
+<td>❌ 默认不会被复制</td>
+</tr>
+</tbody></table>
+<p>所以，<strong>所有自定义资源（字体、图片、自定义 CSS 等）都应该放在博客根目录的 <code>source/</code> 下</strong>，而不是主题的 <code>source/</code> 下。</p>
+<hr>
+<p>赶快试试方案一，把字体移到根目录的 <code>source/font/</code> 下，重新生成后应该就能生效了！如果还有问题，告诉我你测试 <code>http://localhost:4000/font/Inter-regular.woff2</code> 的结果。</p>
+<h3 id="如果还不生效"><a href="#如果还不生效" class="headerlink" title="如果还不生效"></a>如果还不生效</h3><h3 id="可能原因-1：mycustom-css-没有被引入"><a href="#可能原因-1：mycustom-css-没有被引入" class="headerlink" title="可能原因 1：mycustom.css 没有被引入"></a>可能原因 1：<code>mycustom.css</code> 没有被引入</h3><p>检查 <code>_config.butterfly.yml</code>：</p>
+<p>yaml</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">    - &lt;link rel="stylesheet" href="/css/mycustom.css"&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>或者检查主题是否有自定义 CSS 配置项。</p>
+<h4 id="可能原因-2：字体文件命名大小写问题"><a href="#可能原因-2：字体文件命名大小写问题" class="headerlink" title="可能原因 2：字体文件命名大小写问题"></a>可能原因 2：字体文件命名大小写问题</h4><p>如果你的文件名是 <code>Inter-Regular.woff2</code>（R 大写），URL 中也必须写成大写。</p>
+<p><strong>查看你的实际文件名</strong>：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dir E:\project\blog\cognize\source\font\</span><br></pre></td></tr></tbody></table></figure>
+
+<p>确保 CSS 中的文件名和实际文件名<strong>完全一致</strong>（包括大小写）。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://cognize.feeding-engineer.com">Feeding Engineer</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://cognize.feeding-engineer.com/2026/06/18/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%B9%8B%E8%BF%90%E8%90%A5Google-Fonts%E5%AD%97%E4%BD%93%E4%B8%8B%E8%BD%BD%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97%E4%BB%8ETTF%E5%88%B0Web%E5%AD%97%E4%BD%93%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/">https://cognize.feeding-engineer.com/2026/06/18/%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%B9%8B%E8%BF%90%E8%90%A5Google-Fonts%E5%AD%97%E4%BD%93%E4%B8%8B%E8%BD%BD%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97%E4%BB%8ETTF%E5%88%B0Web%E5%AD%97%E4%BD%93%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/google-font/">google font</a></div><div class="post-share"><div class="social-share" data-image="/img/featureimages/19.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/06/25/%E6%AF%94%E7%89%B9%E5%B8%81%E5%AE%B6%E5%BA%AD%E6%8C%96%E7%9F%BF%E5%B8%B8%E8%A7%81%E6%9C%AF%E8%AF%AD%E8%A7%A3%E9%87%8A/" title="比特币家庭挖矿常见术语解释"><img class="cover" src="/img/featureimages/18.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">比特币家庭挖矿常见术语解释</div></div><div class="info-2"><div class="info-item-1">比特币家庭挖矿常见术语解释Hashrate（算力）算力是设备每秒能够执行的哈希计算次数。 简单理解： 算力越高，相当于买彩票的次数越多，因此获得区块奖励的概率也会相应提高。 常见单位：  GH/s = 十亿次计算每秒 TH/s = 万亿次计算每秒 PH/s = 千万亿次计算每秒 EH/s = 百亿亿次计算每秒  Hash（哈希）哈希是一种固定长度的数字指纹。 比特币使用 SHA-256 算法，每次计算都会生成一个新的哈希值。 矿机实际上是在不断尝试寻找符合条件的哈希结果。 Nonce（随机数）Nonce 是矿工不断改变的参数。 每次改变 Nonce，都会产生新的哈希值。 可以把它理解为： 不断更换彩票号码，直到中奖为止。 Block（区块）区块是比特币网络记录交易数据的容器。 平均每十分钟产生一个新区块。 每个新区块都会连接到前一个区块，因此形成区块链。 Block Reward（区块奖励）成功发现新区块后，矿工能够获得对应的 BTC 奖励。 目前奖励由：  新产生的 BTC 用户支付的交易手续费  两部分组成。 Difficulty（难度）难度代表找到有效区块的困难程度。 网络...</div></div></div></a><a class="pagination-related" href="/2026/06/17/%E6%B5%81%E9%87%8F%E6%97%B6%E4%BB%A3%E7%9A%84%E5%8D%81%E5%AD%97%E8%B7%AF%E5%8F%A3%E5%86%85%E5%AE%B9%E5%88%9B%E4%B8%9A%E8%AF%A5%E4%BB%A5%E9%87%8F%E5%8F%96%E8%83%9C%E8%BF%98%E6%98%AF%E8%BF%BD%E9%80%90%E7%83%AD%E7%82%B9/" title="流量时代的十字路口内容创业该以量取胜还是追逐热点"><img class="cover" src="/img/featureimages/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">流量时代的十字路口内容创业该以量取胜还是追逐热点</div></div><div class="info-2"><div class="info-item-1">在当今的内容创作与数字化营销领域，创作者和商家常常面临一个核心抉择：究竟是靠源源不断的长线产出“以量取胜”，还是顺应瞬息万变的市场趋势“根据热点”顺势而为？这两种策略代表了两种完全不同的增长逻辑。本文将深度剖析它们的利弊，并为您提供一套将二者结合的进阶打法。 策略对比   策略维度 以量取胜 (海量铺货/广撒网) 根据热点 (追流量/打爆款)    核心逻辑 靠概率获胜。内容/产品基数大，覆盖关键词多，总能踩中部分受众或SEO搜索。 靠爆发力获胜。借势平台大流量，在短期内获取极高曝光和转化。   优势 收益稳定，受突发事件影响小；利于建立长尾流量词库，建立长线护城河。 流量爆发极快，容易产生破圈效应，ROI（投入产出比）上限高。   劣势 单篇/单品转化率较低，初期工作量巨大，对供应链或内容产出能力要求高。 生命周期短（通常只有几天），对信息捕捉和执行速度要求极高；后续流量断崖严重。   适合对象 资源丰富、具备自动化/批量化生产能力、主打SEO或铺货模式的企业/个人。 团队敏捷度高、擅长文案包装、有网感、做IP孵化或短视频运营的创作者。   一、 以量取胜：构建坚不可摧的“长尾...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/logo23.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Feeding Engineer</div><div class="author-info-description">Notes on moments when understanding reorganizes itself. Not about more information — about seeing differently. 791447771@qq.com</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://magicminer.cc"><i class="fab fa-link"></i><span>Follow Us</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Action is the antidote to despair.</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%98%AF-TTF%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF-Web-%E5%AD%97%E4%BD%93%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">一、为什么下载的是 TTF，而不是 Web 字体？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E4%BD%BF%E7%94%A8-CDN-%E5%B5%8C%E5%85%A5%EF%BC%88%E6%9C%80%E6%8E%A8%E8%8D%90%EF%BC%8C%E6%97%A0%E9%9C%80%E4%B8%8B%E8%BD%BD%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">二、方法一：使用 CDN 嵌入（最推荐，无需下载）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-number">2.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%82%B9"><span class="toc-number">2.2.</span> <span class="toc-text">优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-number">2.3.</span> <span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E4%BD%BF%E7%94%A8-google-webfonts-helper%EF%BC%88%E6%8E%A8%E8%8D%90%E5%9B%BD%E5%86%85%E7%94%A8%E6%88%B7%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">三、方法二：使用 google-webfonts-helper（推荐国内用户）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-1"><span class="toc-number">3.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E7%9A%84-CSS-%E7%A4%BA%E4%BE%8B"><span class="toc-number">3.2.</span> <span class="toc-text">生成的 CSS 示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%82%B9-1"><span class="toc-number">3.3.</span> <span class="toc-text">优点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%96%B9%E6%B3%95%E4%B8%89%EF%BC%9A%E4%BD%BF%E7%94%A8-google-font-cli-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7"><span class="toc-number">4.</span> <span class="toc-text">四、方法三：使用 google-font-cli 命令行工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4"><span class="toc-number">4.1.</span> <span class="toc-text">安装步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD-WOFF2-%E6%A0%BC%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">下载 WOFF2 格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9A%A0%EF%B8%8F-%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF"><span class="toc-number">4.3.</span> <span class="toc-text">⚠️ 常见错误</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%82%B9-2"><span class="toc-number">4.4.</span> <span class="toc-text">优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9-1"><span class="toc-number">4.5.</span> <span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95%E5%AF%B9%E6%AF%94"><span class="toc-number">5.</span> <span class="toc-text">五、三种方法对比</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94"><span class="toc-number">6.</span> <span class="toc-text">六、常见问题解答</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">七、总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%94%E5%A6%82%EF%BC%9A"><span class="toc-number">7.1.</span> <span class="toc-text">比如：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%81-%E7%A1%AE%E8%AE%A4%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE"><span class="toc-number">8.</span> <span class="toc-text">📁 确认文件位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E9%80%9A%E8%BF%87-Butterfly-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">9.</span> <span class="toc-text">方法一：通过 Butterfly 主题配置（推荐）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93-CSS-%E6%96%87%E4%BB%B6%EF%BC%88%E5%AD%97%E4%BD%93%E4%B8%8D%E6%98%AF%E6%94%BE%E5%9C%A8%E4%B8%BB%E9%A2%98%E9%87%8C%E9%9D%A2%E8%80%8C%E6%98%AF%E6%94%BE%E5%9C%A8source%E7%9B%AE%E5%BD%95%E4%B8%8B%EF%BC%8C%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AD%97%E4%BD%93%E7%9B%AE%E5%BD%95%EF%BC%89"><span class="toc-number">9.1.</span> <span class="toc-text">1. 创建自定义字体 CSS 文件（字体不是放在主题里面而是放在source目录下，新建一个字体目录）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%9C%A8-Butterfly-%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BC%95%E5%85%A5%E5%AD%97%E4%BD%93"><span class="toc-number">9.2.</span> <span class="toc-text">2. 在 Butterfly 配置中引入字体</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E7%9B%B4%E6%8E%A5%E4%BF%AE%E6%94%B9-Butterfly-%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%96%87%E4%BB%B6"><span class="toc-number">10.</span> <span class="toc-text">方法二：直接修改 Butterfly 的样式文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%89%BE%E5%88%B0%E5%B9%B6%E7%BC%96%E8%BE%91%E4%B8%BB%E9%A2%98-CSS-%E6%96%87%E4%BB%B6"><span class="toc-number">10.1.</span> <span class="toc-text">1. 找到并编辑主题 CSS 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9%E5%AD%97%E4%BD%93%E5%8F%98%E9%87%8F"><span class="toc-number">10.2.</span> <span class="toc-text">2. 修改字体变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%89%EF%BC%9A%E4%BD%BF%E7%94%A8-Hexo-%E7%9A%84-injector-%E5%8A%9F%E8%83%BD%EF%BC%88%E6%9C%80%E7%81%B5%E6%B4%BB%EF%BC%89"><span class="toc-number">11.</span> <span class="toc-text">方法三：使用 Hexo 的 injector 功能（最灵活）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA-injector-%E6%96%87%E4%BB%B6"><span class="toc-number">11.1.</span> <span class="toc-text">1. 创建 injector 文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%AF-%E6%88%91%E6%8E%A8%E8%8D%90%E7%9A%84%E6%96%B9%E6%B3%95%E7%BB%84%E5%90%88"><span class="toc-number">12.</span> <span class="toc-text">🎯 我推荐的方法组合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%A7-%E9%AA%8C%E8%AF%81%E5%92%8C%E5%BA%94%E7%94%A8"><span class="toc-number">13.</span> <span class="toc-text">🔧 验证和应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%A0%EF%B8%8F-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">14.</span> <span class="toc-text">⚠️ 注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%94%8D-%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E9%80%9A%E8%BF%87-gfcli-%E6%90%9C%E7%B4%A2%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%89"><span class="toc-number">14.1.</span> <span class="toc-text">🔍 方法一：通过 gfcli 搜索（适用于命令行）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%8C%90-%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9AGoogle-Fonts-%E5%BC%80%E5%8F%91%E8%80%85-API%EF%BC%88%E6%9C%80%E5%BC%BA%E5%A4%A7%EF%BC%89"><span class="toc-number">14.2.</span> <span class="toc-text">🌐 方法二：Google Fonts 开发者 API（最强大）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%92%A1-%E6%9C%80%E6%8E%A8%E8%8D%90%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A%E7%9B%B4%E6%8E%A5%E5%9C%A8%E5%AE%98%E7%BD%91%E6%B5%8F%E8%A7%88"><span class="toc-number">14.3.</span> <span class="toc-text">💡 最推荐的方法：直接在官网浏览</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%8D-%E9%97%AE%E9%A2%98%E6%89%80%E5%9C%A8"><span class="toc-number">15.</span> <span class="toc-text">🔍 问题所在</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">16.</span> <span class="toc-text">🛠️ 解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80%EF%BC%9A%E6%8A%8A%E5%AD%97%E4%BD%93%E7%A7%BB%E5%88%B0%E5%8D%9A%E5%AE%A2%E6%A0%B9%E7%9B%AE%E5%BD%95%E7%9A%84-source-%E4%B8%8B%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">16.1.</span> <span class="toc-text">方案一：把字体移到博客根目录的 source&#x2F; 下（推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C%EF%BC%9A%E4%BF%AE%E6%94%B9-Hexo-%E9%85%8D%E7%BD%AE%EF%BC%8C%E5%8C%85%E5%90%AB%E4%B8%BB%E9%A2%98%E7%9A%84-source-%E7%9B%AE%E5%BD%95"><span class="toc-number">16.2.</span> <span class="toc-text">方案二：修改 Hexo 配置，包含主题的 source 目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%89%EF%BC%9A%E4%BD%BF%E7%94%A8%E4%B8%BB%E9%A2%98%E7%9A%84-inject-%E5%8A%9F%E8%83%BD%EF%BC%88%E5%A6%82%E6%9E%9C-Butterfly-%E6%94%AF%E6%8C%81%EF%BC%89"><span class="toc-number">16.3.</span> <span class="toc-text">方案三：使用主题的 inject 功能（如果 Butterfly 支持）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%85-%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F"><span class="toc-number">17.</span> <span class="toc-text">✅ 验证是否成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%8C-%E8%AE%B0%E4%BD%8F%E8%BF%99%E4%B8%AA%E8%A7%84%E5%88%99"><span class="toc-number">18.</span> <span class="toc-text">📌 记住这个规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E8%BF%98%E4%B8%8D%E7%94%9F%E6%95%88"><span class="toc-number">18.1.</span> <span class="toc-text">如果还不生效</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0-1%EF%BC%9Amycustom-css-%E6%B2%A1%E6%9C%89%E8%A2%AB%E5%BC%95%E5%85%A5"><span class="toc-number">18.2.</span> <span class="toc-text">可能原因 1：mycustom.css 没有被引入</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E5%8E%9F%E5%9B%A0-2%EF%BC%9A%E5%AD%97%E4%BD%93%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E5%A4%A7%E5%B0%8F%E5%86%99%E9%97%AE%E9%A2%98"><span class="toc-number">18.2.1.</span> <span class="toc-text">可能原因 2：字体文件命名大小写问题</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/07/15/FileBrowser%E4%B8%8EAlist%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E5%AF%B9%E6%AF%94%E6%8C%87%E5%8D%97-%E4%BB%8E%E9%9C%80%E6%B1%82%E5%88%B0%E5%AE%9E%E6%93%8D%E5%96%82%E9%A5%AD%E7%BA%A7%E6%95%99%E7%A8%8B/" title="FileBrowser与Alist本地化部署各项指标对比指南-从需求到实操喂饭级教程"><img src="/img/featureimages/13.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="FileBrowser与Alist本地化部署各项指标对比指南-从需求到实操喂饭级教程"/></a><div class="content"><a class="title" href="/2026/07/15/FileBrowser%E4%B8%8EAlist%E6%9C%AC%E5%9C%B0%E5%8C%96%E9%83%A8%E7%BD%B2%E5%90%84%E9%A1%B9%E6%8C%87%E6%A0%87%E5%AF%B9%E6%AF%94%E6%8C%87%E5%8D%97-%E4%BB%8E%E9%9C%80%E6%B1%82%E5%88%B0%E5%AE%9E%E6%93%8D%E5%96%82%E9%A5%AD%E7%BA%A7%E6%95%99%E7%A8%8B/" title="FileBrowser与Alist本地化部署各项指标对比指南-从需求到实操喂饭级教程">FileBrowser与Alist本地化部署各项指标对比指南-从需求到实操喂饭级教程</a><time datetime="2026-07-15T01:51:55.000Z" title="Created 2026-07-15 09:51:55">2026-07-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/07/10/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Elementor%E5%AE%8C%E7%BE%8E%E9%A9%B1%E5%8A%A8ACF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B-CPT-CPT%E7%B1%BB%E5%9E%8B%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Elementor%E7%BC%96%E8%BE%91%E5%99%A8%E5%86%99%E5%86%85%E5%AE%B9/" title="如何使用Elementor完美驱动ACF自定义文章类型(CPT),CPT类型如何使用Elementor编辑器写内容"><img src="/img/featureimages/10.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何使用Elementor完美驱动ACF自定义文章类型(CPT),CPT类型如何使用Elementor编辑器写内容"/></a><div class="content"><a class="title" href="/2026/07/10/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Elementor%E5%AE%8C%E7%BE%8E%E9%A9%B1%E5%8A%A8ACF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B-CPT-CPT%E7%B1%BB%E5%9E%8B%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Elementor%E7%BC%96%E8%BE%91%E5%99%A8%E5%86%99%E5%86%85%E5%AE%B9/" title="如何使用Elementor完美驱动ACF自定义文章类型(CPT),CPT类型如何使用Elementor编辑器写内容">如何使用Elementor完美驱动ACF自定义文章类型(CPT),CPT类型如何使用Elementor编辑器写内容</a><time datetime="2026-07-10T10:56:20.000Z" title="Created 2026-07-10 18:56:20">2026-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/07/10/%E7%8B%AC%E7%AB%8B%E7%AB%99%E8%BF%90%E8%90%A5%E7%9A%84%E8%AE%A4%E7%9F%A5%E7%AA%81%E7%A0%B4%E4%BB%8E%E6%93%8D%E4%BD%9C%E5%B1%82%E9%9D%A2%E8%B7%83%E5%8D%87%E5%88%B0%E5%BF%83%E6%B3%95%E5%B1%82%E9%9D%A2-%E4%BB%8E%E6%88%98%E6%9C%AF%E5%88%B0%E6%88%98%E7%95%A5%E8%AE%A4%E7%9F%A5%E6%8F%90%E5%8D%87/" title="独立站运营的认知突破从操作层面跃升到心法层面(从战术到战略认知提升)"><img src="/img/featureimages/20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="独立站运营的认知突破从操作层面跃升到心法层面(从战术到战略认知提升)"/></a><div class="content"><a class="title" href="/2026/07/10/%E7%8B%AC%E7%AB%8B%E7%AB%99%E8%BF%90%E8%90%A5%E7%9A%84%E8%AE%A4%E7%9F%A5%E7%AA%81%E7%A0%B4%E4%BB%8E%E6%93%8D%E4%BD%9C%E5%B1%82%E9%9D%A2%E8%B7%83%E5%8D%87%E5%88%B0%E5%BF%83%E6%B3%95%E5%B1%82%E9%9D%A2-%E4%BB%8E%E6%88%98%E6%9C%AF%E5%88%B0%E6%88%98%E7%95%A5%E8%AE%A4%E7%9F%A5%E6%8F%90%E5%8D%87/" title="独立站运营的认知突破从操作层面跃升到心法层面(从战术到战略认知提升)">独立站运营的认知突破从操作层面跃升到心法层面(从战术到战略认知提升)</a><time datetime="2026-07-10T02:51:22.000Z" title="Created 2026-07-10 10:51:22">2026-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/07/08/WordPress%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%A4%9A%E9%93%BE%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E6%94%B6%E6%AC%BE%E4%B8%9A%E5%8A%A1-%E6%B3%95%E5%B8%81-%E4%BB%A3%E5%B8%81-%E7%A8%B3%E5%AE%9A%E5%B8%81-%E8%90%BD%E5%9C%B0%E4%B8%8EWeb3%E8%B5%84%E4%BA%A7%E5%90%88%E8%A7%84%E8%BD%AC%E6%8D%A2%E5%AE%9E%E5%8A%A1%E6%8C%87%E5%8D%97/" title="WordPress独立站多链加密货币收款业务(法币,代币,稳定币)落地与Web3资产合规转换实务指南"><img src="/img/featureimages/7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="WordPress独立站多链加密货币收款业务(法币,代币,稳定币)落地与Web3资产合规转换实务指南"/></a><div class="content"><a class="title" href="/2026/07/08/WordPress%E7%8B%AC%E7%AB%8B%E7%AB%99%E5%A4%9A%E9%93%BE%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%E6%94%B6%E6%AC%BE%E4%B8%9A%E5%8A%A1-%E6%B3%95%E5%B8%81-%E4%BB%A3%E5%B8%81-%E7%A8%B3%E5%AE%9A%E5%B8%81-%E8%90%BD%E5%9C%B0%E4%B8%8EWeb3%E8%B5%84%E4%BA%A7%E5%90%88%E8%A7%84%E8%BD%AC%E6%8D%A2%E5%AE%9E%E5%8A%A1%E6%8C%87%E5%8D%97/" title="WordPress独立站多链加密货币收款业务(法币,代币,稳定币)落地与Web3资产合规转换实务指南">WordPress独立站多链加密货币收款业务(法币,代币,稳定币)落地与Web3资产合规转换实务指南</a><time datetime="2026-07-08T03:28:01.000Z" title="Created 2026-07-08 11:28:01">2026-07-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/07/06/%E4%B8%93%E5%B1%9EPrompt%E5%AF%B9GA4%E8%BD%AF%E4%BB%B6%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C%E4%B8%93%E4%B8%9A%E7%94%9F%E6%88%90%E5%99%A8/" title="专属Prompt对GA4软件操作手册专业生成器"><img src="/img/featureimages/15.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="专属Prompt对GA4软件操作手册专业生成器"/></a><div class="content"><a class="title" href="/2026/07/06/%E4%B8%93%E5%B1%9EPrompt%E5%AF%B9GA4%E8%BD%AF%E4%BB%B6%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C%E4%B8%93%E4%B8%9A%E7%94%9F%E6%88%90%E5%99%A8/" title="专属Prompt对GA4软件操作手册专业生成器">专属Prompt对GA4软件操作手册专业生成器</a><time datetime="2026-07-06T14:57:33.000Z" title="Created 2026-07-06 22:57:33">2026-07-06</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Feeding Engineer</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 6.2.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.5-b1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.5-b1"></script><script src="/js/main.js?v=5.5.5-b1"></script><div class="js-pjax"></div><script src="/js/mermaid.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
